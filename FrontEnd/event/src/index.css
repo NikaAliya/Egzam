@@ -1,0 +1,143 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap");
+
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  color: #222;
+  background: url("https://images.pexels.com/photos/255379/pexels-photo-255379.jpeg?cs=srgb&dl=pexels-padrinan-255379.jpg&fm=jpg")
+    no-repeat center center fixed;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  line-height: 1.6;
+  text-align: center;
+}
+
+h1 {
+  font-size: 3em;
+  color: #00509e;
+  margin: 0;
+}
+
+p {
+  font-size: 1.2em;
+  color: #4682b4;
+  margin: 0.5em 0;
+}
+
+a {
+  color: #00509e;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+a:hover,
+a:focus {
+  color: #003f5c;
+  text-decoration: underline;
+}
+
+input,
+textarea {
+  width: calc(100% - 30px);
+  height: 40px;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #6495ed;
+  border-radius: 5px;
+  font-size: 0.9em;
+}
+
+input:focus,
+textarea:focus {
+  border-color: #00509e;
+  outline: none;
+  box-shadow: 0 0 5px rgba(0, 80, 158, 0.5);
+}
+
+button {
+  background-color: #e6e6fa;
+  color: #222;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-top: 10px;
+}
+
+button:hover,
+button:focus {
+  background-color: #6495ed;
+  outline: none;
+}
+
+nav {
+  background: linear-gradient(30deg, #62817c, #83b7b1);
+  padding: 0.5em;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+nav a {
+  color: #222;
+  padding: 0.5em 1em;
+  font-weight: 600;
+  border-radius: 10px;
+  transition: background-color 0.3s;
+}
+
+nav a:hover {
+  background-color: #e6e6fa;
+}
+
+.register-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.register-container h1 {
+  margin-bottom: 20px;
+}
+
+.register-container .input-group {
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.register-container .input-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.register-container .input-group input {
+  width: 100%;
+  height: 40px;
+  padding: 10px;
+  border: 1px solid #6495ed;
+  border-radius: 5px;
+  font-size: 0.9em;
+}
+
+.register-container .error-text {
+  color: red;
+  font-size: 0.875em;
+  margin-top: 5px;
+}
